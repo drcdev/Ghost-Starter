@@ -1,0 +1,27 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+  "name": "Node.js",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bullseye",
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [2368],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "sh ./.devcontainer/postCreateCommand.sh",
+  "postStartCommand": "sh ./.devcontainer/postStartCommand.sh",
+  "postAttachCommand": "sh ./.devcontainer/postAttachCommand.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "TryGhost.ghost"
+      ]
+    }
+  }
+
+  // Configure tool-specific properties.
+  // "customizations": {},
+}
