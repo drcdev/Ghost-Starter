@@ -1,4 +1,4 @@
 cd /workspaces/ghost
 ghost start
-cd /workspaces/flux
-npm start
+cd /workspaces/Ghost-Starter
+npm run dev

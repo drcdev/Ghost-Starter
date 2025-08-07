@@ -4,7 +4,6 @@
 npm i
 npm i -g ghost-cli@latest
 npm i -g gscan@latest
-npm i -g @anthropic-ai/claude-code
 
 # Install Ghost
 cd /workspaces
@@ -13,6 +12,6 @@ cd ghost
 ghost install local --no-start
 
 # symlink the current folder to the ghost themes folder
-ln -s /workspaces/flux /workspaces/ghost/content/themes/flux
+ln -s /workspaces/Ghost-Starter /workspaces/ghost/content/themes/Ghost-Starter
 
-cd /workspaces/flux
+cd /workspaces/Ghost-Starter
